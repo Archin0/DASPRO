@@ -26,10 +26,13 @@ public class WhileGaji08 {
                 gajiLembur = jlhJamLembur * 100000;
             } else if (jabatan.equalsIgnoreCase("staf")) {
                 gajiLembur = jlhJamLembur * 75000;
+            } else {
+                System.out.println("Jabatan Invalid!");
+                i--;
             }
 
             totGajiLembur += gajiLembur;
-            System.out.println("Total gaji lembur : " + totGajiLembur);
         }
+        System.out.println("Total gaji lembur : " + totGajiLembur);
     }
 }
