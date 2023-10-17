@@ -22,8 +22,7 @@ public class TugasB {
             i++;
         }
         
-        i--;
-        System.out.printf("Hasil penjumlahan deret bilangan %d sampai dengan 1 adalah : %d", i, jumlah);
+        System.out.printf("Hasil penjumlahan deret bilangan %d sampai dengan 1 adalah : %d", bilangan, jumlah);
         scan.close();
     }
     
