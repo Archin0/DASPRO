@@ -9,8 +9,9 @@ public class Tugas2 {
             array[i] = sc. nextInt();
         }
 
-        for (int i = 0; i < array.length; i++) {
-            System.out.println("Elemen ke-"+(i+1)+" : "+array[i]);
-        }
+        // Print array
+        // for (int i = 0; i < array.length; i++) {
+        //     System.out.println("Elemen ke-"+(i+1)+" : "+array[i]);
+        // }
     }
 }
