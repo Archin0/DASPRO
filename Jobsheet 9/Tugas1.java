@@ -4,7 +4,7 @@ public class Tugas1 {
         Scanner sc = new Scanner(System.in);
 
         int[] nilai = new int [50];
-        int jlhNilai, max, min, total=0, temp=0;
+        int jlhNilai, total=0, temp=0;
         double rata2;
 
         // Input banyaknya elemen 
@@ -16,6 +16,7 @@ public class Tugas1 {
             System.out.print("Masukkan nilai mahasiswa ke-"+(i+1)+" : ");
             nilai[i] = sc.nextInt();
         }
+        sc.close();
 
         // Mencari nilai tertinggi
         for (int i=0; i < jlhNilai; i++) {
@@ -53,7 +54,7 @@ public class Tugas1 {
         for (int i = 0; i < jlhNilai; i++) {
             total += nilai[i];
         }
-        
+
         rata2 = total/jlhNilai;
         System.out.println("Nilai rata-rata : "+rata2);
 
