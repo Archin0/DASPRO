@@ -1,12 +1,12 @@
 import java.util.Scanner;
 public class Tugas4 {
-    static int hitungPasMarmut(int bulan){
+    static int hitungPsgMarmut(int bulan){
         if(bulan == 1 || bulan == 2){
             return 1; 
         } else if(bulan < 1){
             return 0;
         } else {
-            return hitungPasMarmut(bulan - 2) + hitungPasMarmut(bulan - 1);
+            return hitungPsgMarmut(bulan - 2) + hitungPsgMarmut(bulan - 1);
         }
     }
     public static void main(String[] args) {
@@ -14,14 +14,12 @@ public class Tugas4 {
         System.out.print("Masukkan jumlah bulan : ");
         int bulan = sc.nextInt();
 
-        System.out.println("========================================================================================");
-        System.out.println("|Bulan|\t\t|Pasangan Produktif|\t|Pasangan Belum Produktif|\t|Total Pasangan|");
-        System.out.println("========================================================================================");
+        System.out.println("|Bulan|\t\t|Jumlah Produktif|\t|Jumlah Belum Produktif|\t|Total Pasangan|");
 
         for (int i = 0; i <= bulan; i++) {
-            int total = hitungPasMarmut(i);
-            int jumlahPasangan = hitungPasMarmut(i - 1);
-            int blmProduktif = hitungPasMarmut(i - 2);
+            int total = hitungPsgMarmut(i);
+            int jumlahPasangan = hitungPsgMarmut(i - 1);
+            int blmProduktif = hitungPsgMarmut(i - 2);
 
             sc.close();  
 
